@@ -30,7 +30,7 @@ import {
 } from "@/assets";
 
 export default function Services() {
-  const [typeService, setTypeService] = useState("freeLancer");
+  const [typeService, setTypeService] = useState("toCompanies");
 
   const handleTypeService = (type: string) => {
     return setTypeService(type);
@@ -53,7 +53,7 @@ export default function Services() {
           {typeService === "toCompanies" && (
             <CompaniesSection>
               <div>
-                <h2>Frotend Developer</h2>
+                <h2>Frontend Developer</h2>
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Dicta molestiae fugit incidunt provident, cupiditate culpa
