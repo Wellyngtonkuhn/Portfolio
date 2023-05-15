@@ -12,9 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Olá, seja bem vindo ao meu portfolio. Que tal conhecer um pouco mais sobre meus trabalhos?" />
         <title>Wellyngton Kuhn | Portfolio</title>
       </Head>
-      <StyledComponentsRegistry>
+      {/* <StyledComponentsRegistry> */}
           <Component {...pageProps} />
-      </StyledComponentsRegistry>
+      {/* </StyledComponentsRegistry> */}
     </>
   );
 }
