@@ -9,10 +9,10 @@ declare module "styled-components" {
       title: string;
     };
     buttons: {
-      background: string,
-      background_hover: string,
-      color: string,
-      color_hover: string
-    }
+      background: string;
+      background_hover: string;
+      color: string;
+      color_hover: string;
+    };
   }
 }

@@ -7,7 +7,6 @@ import { Container } from "@/styles/ContainerStyles";
 import { ContactSection, Content } from "./style";
 import Title from "../Title";
 
-
 const formShema = yup.object({
   name: yup.string().required("Campo obrigatório"),
   email: yup
@@ -31,12 +30,12 @@ enum SubjectEum {
 
 type FormInput = yup.InferType<typeof formShema>;
 
-const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID
-const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID
-const PUBLIC_KEY =  process.env.NEXT_PUBLIC_PUBLIC_KEY
+const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
 export default function Contact() {
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -49,14 +48,14 @@ export default function Contact() {
 
   const onSubmit: SubmitHandler<FormInput> = (data) => {
     const templateParams = {
-      from_name: data.name,
-      email: data.email,
-      subject: data.subject,
-      phone: data.phone,
-      message: data.message,
+      from_name: data?.name,
+      email: data?.email,
+      subject: data?.subject,
+      phone: data?.phone,
+      message: data?.message,
     };
 
-    setIsLoading(true)
+    setIsLoading(true);
     emailjs
       .send(
         SERVICE_ID as string,
@@ -65,15 +64,15 @@ export default function Contact() {
         PUBLIC_KEY as string
       )
       .then((result) => {
-        if(result.text === 'OK') {
-          alert('Mensagem enviada')
+        if (result.text === "OK") {
+          alert("Mensagem enviada");
         }
       })
-      .catch((err) => console.error(err))
+      .catch(() => alert("Mensagem não enviada, tente mais tarde"))
       .finally(() => {
-        setIsLoading(false)
-        reset()
-      })
+        setIsLoading(false);
+        reset();
+      });
   };
 
   return (
@@ -117,10 +116,12 @@ export default function Contact() {
 
             <label>
               Mensagem
-              <textarea {...register("message")}></textarea>
+              <textarea {...register("message")} />
               <p>{errors.message?.message}</p>
             </label>
-            <button type="submit">{isLoading ? 'Enviando...' : 'Enviar'}</button>
+            <button type="submit">
+              {isLoading ? "Enviando..." : "Enviar"}
+            </button>
           </form>
         </Content>
       </Container>
