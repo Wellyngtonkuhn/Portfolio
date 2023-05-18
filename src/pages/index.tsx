@@ -9,6 +9,8 @@ import Hero from "@/components/Hero"
 import About from "@/components/About"
 import Works from "@/components/works"
 import Services from "@/components/Services"
+import Contact from "@/components/Contact"
+import Footer from "@/components/Footer"
 
 
 export default function Main() {
@@ -25,6 +27,8 @@ export default function Main() {
       <About />
       <Works />
       <Services />
+      <Contact />
+      <Footer />
       <DefaultStyle />
     </ThemeProvider>
   )

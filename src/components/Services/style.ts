@@ -209,7 +209,7 @@ export const FreelancerSection = styled.div`
     div {
       img {
         width: 75%;
-        height: 350px;
+        height: 400px;
       }
 
       h3 {
