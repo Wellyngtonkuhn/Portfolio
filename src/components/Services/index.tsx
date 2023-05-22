@@ -110,7 +110,7 @@ export default function Services() {
                     <h3>Nextjs</h3>
                   </li>
                 </ul>
-                <button>Contato</button>
+                <a href="#contact">Contato</a>
               </div>
             </CompaniesSection>
           )}

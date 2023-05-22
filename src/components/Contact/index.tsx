@@ -76,7 +76,7 @@ export default function Contact() {
   };
 
   return (
-    <ContactSection>
+    <ContactSection id="contact">
       <Container>
         <Content>
           <Title title="Contato" />

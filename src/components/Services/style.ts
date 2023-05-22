@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ServicesSection = styled.section`
   width: 100%;
   background-color: ${({ theme }) => theme.background_primary};
-  padding: 2rem 0;
+  padding: 3rem 0 2rem 0;
 `;
 
 export const Menu = styled.div`
@@ -68,11 +68,13 @@ export const CompaniesSection = styled.div`
   }
 
   div:nth-child(2) {
+    text-align: center;
     ul {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       gap: 1rem;
+      margin-bottom: 1.5rem;
 
       li {
         display: flex;
@@ -97,17 +99,15 @@ export const CompaniesSection = styled.div`
       }
     }
 
-    button {
-      width: 100%;
-      padding: 0.5rem 0;
-      border: none;
+    a {
+      padding: .5rem 5rem;
       border-radius: 25px;
-      margin-top: 1rem;
       font-size: 1.125rem;
       font-weight: 500;
       line-height: 24.59px;
       font-family: "DM Sans", sans-serif;
       font-weight: 500;
+      text-align: center;
       color: ${({ theme }) => theme.buttons.color};
       background-color: ${({ theme }) => theme.buttons.background};
     }
@@ -149,12 +149,10 @@ export const CompaniesSection = styled.div`
       ul {
         justify-content: space-between;
       }
-      button {
+      a {
         width: 60%;
 
-        :hover {
-          cursor: pointer;
-        }
+       
       }
     }
   }

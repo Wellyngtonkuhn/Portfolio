@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContactSection = styled.section`
   width: 100%;
   background-color: ${({ theme }) => theme.background_primary};
-  padding: 2rem 0;
+  padding: 3rem 0 2rem 0;
 `;
 
 export const Content = styled.div`

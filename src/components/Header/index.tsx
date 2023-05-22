@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ handleDarkMode, darkMode }) => {
                 <a href="#">Depoimentos</a>
               </li>
               <li>
-                <a href="#">Contato</a>
+                <a href="#contact">Contato</a>
               </li>
             </ul>
           </Nav>

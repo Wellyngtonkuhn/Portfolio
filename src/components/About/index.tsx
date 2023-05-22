@@ -4,7 +4,7 @@ import Title from "../Title";
 
 export default function About() {
   return (
-    <AboutSection id="about" >
+    <AboutSection id="about">
       <Container>
         <Content>
           <Title title="Sobre" />

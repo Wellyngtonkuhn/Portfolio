@@ -8,7 +8,7 @@ import ImageProfile from "../../assets/wellyngton_kuhn.webp";
 
 export default function Hero() {
   return (
-    <HeroSection>
+    <HeroSection >
       <Container>
         <Content>
           <div>
