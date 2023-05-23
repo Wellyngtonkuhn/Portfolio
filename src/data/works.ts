@@ -1,10 +1,15 @@
+import { useId } from "react";
+
 type Works = {
-  id: number
+  id: string
   projectName: string;
   description: string;
-  images: [{ url: string }];
+  image: string
+  link: string
 };
 
+const id = useId()
+
 export const MyWorks: Works[] = [
-  { id: 0, projectName: "ss", description: "", images: [{ url: "" }] },
+  { id, projectName: "Eyewear", description: "", image: "", link: 'https://e-commerce-seven-indol.vercel.app/' },
 ];

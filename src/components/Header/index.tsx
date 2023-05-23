@@ -18,6 +18,10 @@ const Header: React.FC<HeaderProps> = ({ handleDarkMode, darkMode }) => {
     setOpenMenuMobile((prev) => !prev);
   };
 
+  const handleCloseMenuMobile = () => {
+    setOpenMenuMobile(false)
+  }
+
   return (
     <HeaderSection>
       <Container>
@@ -29,19 +33,19 @@ const Header: React.FC<HeaderProps> = ({ handleDarkMode, darkMode }) => {
           <Nav>
             <ul className={openMenuMobile ? "open" : "close"}>
               <li>
-                <a href="#about">Sobre</a>
+                <a href="#about" onClick={() => handleCloseMenuMobile()}>Sobre</a>
               </li>
               <li>
-                <a href="#works">Trabalhos</a>
+                <a href="#works" onClick={() => handleCloseMenuMobile()}>Trabalhos</a>
               </li>
               <li>
-                <a href="#services">Serviços</a>
+                <a href="#services" onClick={() => handleCloseMenuMobile()}>Serviços</a>
               </li>
               <li>
-                <a href="#">Depoimentos</a>
+                <a href="#" onClick={() => handleCloseMenuMobile()}>Depoimentos</a>
               </li>
               <li>
-                <a href="#contact">Contato</a>
+                <a href="#contact" onClick={() => handleCloseMenuMobile()}>Contato</a>
               </li>
             </ul>
           </Nav>
