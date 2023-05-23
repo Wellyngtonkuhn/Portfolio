@@ -41,9 +41,9 @@ const Header: React.FC<HeaderProps> = ({ handleDarkMode, darkMode }) => {
               <li>
                 <a href="#services" onClick={() => handleCloseMenuMobile()}>Serviços</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" onClick={() => handleCloseMenuMobile()}>Depoimentos</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#contact" onClick={() => handleCloseMenuMobile()}>Contato</a>
               </li>

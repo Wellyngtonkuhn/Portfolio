@@ -27,6 +27,8 @@ import {
   Site_Instirucional,
   Landing_Page,
   Ecommerce,
+  Saas,
+  Blog
 } from "@/assets";
 
 export default function Services() {
@@ -55,7 +57,10 @@ export default function Services() {
               <div>
                 <h2>Frontend Developer</h2>
                 <p>
-                  Sou desenvolvedor Frontend, mas também desenvolvo backend em Nodejs. Hoje meu foco para contratação é Frontend e estou sempre estudando e aplicando os novos conhecimentos para assim se tornarem experiências sólidas.
+                  Sou desenvolvedor Frontend, mas também desenvolvo backend em
+                  Nodejs. Hoje meu foco para contratação é Frontend e estou
+                  sempre estudando e aplicando os novos conhecimentos para assim
+                  se tornarem experiências sólidas.
                 </p>
               </div>
 
@@ -111,6 +116,7 @@ export default function Services() {
               </div>
             </CompaniesSection>
           )}
+
           {typeService === "freeLancer" && (
             <FreelancerSection>
               <div>
@@ -121,8 +127,9 @@ export default function Services() {
                   loading="lazy"
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  perspiciatis magni esse ullam.
+                  Através da arquitetura pensada em desenvolver primeiro para
+                  dispositivos móveis, damos suporte para os diversos tamanhos
+                  de telas do mercado.
                 </p>
               </div>
               <div>
@@ -133,8 +140,8 @@ export default function Services() {
                   loading="lazy"
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  perspiciatis magni esse ullam.
+                  Precisa transformar o seu visitante em lead? Desenvolvemos a
+                  página perfeita para seu modelo de negócio.
                 </p>
               </div>
               <div>
@@ -145,44 +152,40 @@ export default function Services() {
                   loading="lazy"
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  perspiciatis magni esse ullam.
+                  Se seu negócio precisa de um site para dar informações sobre
+                  sua empresa, como, por exemplo, a localização, serviços,
+                  objetivos, produtos ou serviços concluídos, entre outros. Temos a solução ideal.
                 </p>
               </div>
               <div>
-                <h3>Ecommerce</h3>
+                <h3>Loja Virtual</h3>
                 <Image
                   src={Ecommerce}
-                  alt="Foto de um site institucional"
+                  alt="Loja virtual"
                   loading="lazy"
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  perspiciatis magni esse ullam.
+                  Esta precisando expandir seu negócio para internet, temos a solução ideal para sua empresa vender online. Trabalhamos no desenvolvimento de um site exclusivo e personalizado.
                 </p>
               </div>
               <div>
                 <h3>Blogs</h3>
                 <Image
-                  src={Site_Instirucional}
+                  src={Blog}
                   alt="Foto de um site institucional"
                   loading="lazy"
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  perspiciatis magni esse ullam.
+                  Se o seu caso for criar um blog para publicar conteúdos, como
+                  artigos e fotos, não deixe de nos contactar.
                 </p>
               </div>
               <div>
-                <h3>Sistemas</h3>
-                <Image
-                  src={Site_Instirucional}
-                  alt="Foto de um site institucional"
-                  loading="lazy"
-                />
+                <h3>Sistemas (Saas)</h3>
+                <Image src={Saas} alt="Foto de programação" loading="lazy" />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  perspiciatis magni esse ullam.
+                  Revolucione as rotinas de trabalho com softwares projetados
+                  conforme as estratégias e necessidades de seu empreendimento.
                 </p>
               </div>
             </FreelancerSection>

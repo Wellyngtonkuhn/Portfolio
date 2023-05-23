@@ -100,7 +100,7 @@ export const CompaniesSection = styled.div`
     }
 
     a {
-      padding: .5rem 5rem;
+      padding: 0.5rem 5rem;
       border-radius: 25px;
       font-size: 1.125rem;
       font-weight: 500;
@@ -151,8 +151,6 @@ export const CompaniesSection = styled.div`
       }
       a {
         width: 60%;
-
-       
       }
     }
   }
@@ -178,11 +176,12 @@ export const FreelancerSection = styled.div`
       font-size: 1.3rem;
       color: ${({ theme }) => theme.color.title};
       font-weight: 500;
+      line-height: 25px;
       padding: 1rem 0;
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: ${({ theme }) => theme.color.description};
       text-align: justify;
       padding-top: 0.5rem;
@@ -191,28 +190,27 @@ export const FreelancerSection = styled.div`
 
   //Tablet
   @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     div {
+      width: 300px;
+      transform: scale(1);
+      transition: all ease .3s;
+
       img {
-        height: 350px;
+        width: 100%;
+        height: 200px;
       }
 
       h3 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
       }
     }
-  }
 
-  //Desktop
-  @media screen and (min-width: 1024px) {
-    div {
-      img {
-        width: 75%;
-        height: 400px;
+    div:hover{
+        transform: scale(1.1);
       }
-
-      h3 {
-        font-size: 1.5rem;
-      }
-    }
   }
 `;
