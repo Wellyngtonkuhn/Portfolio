@@ -55,10 +55,7 @@ export default function Services() {
               <div>
                 <h2>Frontend Developer</h2>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dicta molestiae fugit incidunt provident, cupiditate culpa
-                  placeat totam expedita est. Itaque nobis vitae veritatis
-                  accusamus, praesentium corrupti voluptas? Quo, sint soluta.
+                  Sou desenvolvedor Frontend, mas também desenvolvo backend em Nodejs. Hoje meu foco para contratação é Frontend e estou sempre estudando e aplicando os novos conhecimentos para assim se tornarem experiências sólidas.
                 </p>
               </div>
 

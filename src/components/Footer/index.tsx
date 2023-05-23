@@ -10,7 +10,7 @@ export default function Footer() {
       <Container>
         <Content>
         <div>
-          <h2>Desenvolvido por Wellyngton Kuhn</h2>
+          <h2>Desenvolvido por Wellyngton Kuhn 2023</h2>
         </div>
         <div>
           <ul>

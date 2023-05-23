@@ -20,4 +20,10 @@ export const Content = styled.article`
     width: 700px;
     margin: auto;
   }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+    width: 75%;
+    margin: auto;
+  }
 `;
