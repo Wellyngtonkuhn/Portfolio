@@ -28,6 +28,7 @@ export default function Main() {
           name="description"
           content="Olá, seja bem vindo ao meu portfolio. Que tal conhecer um pouco mais sobre meus trabalhos?"
         />
+        <link rel="manifest" href="/manifest.json"/>
       </Head>
       <Header handleDarkMode={handleDarkMode} darkMode={darkMode} />
       <Hero />

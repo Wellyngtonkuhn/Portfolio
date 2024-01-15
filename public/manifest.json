@@ -1,0 +1,9 @@
+{
+  "short_name": "Lorem Ipsum",
+  "name": "Wellyngton Kuhn Porfolio",
+  "start_url": "/",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#000000"
+}
