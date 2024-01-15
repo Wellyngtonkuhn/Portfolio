@@ -2,6 +2,7 @@
   "short_name": "Wellyngton Kuhn",
   "name": "Wellyngton Kuhn Porfolio",
   "description": "Teste de descrição",
+  "id": "/?homescreen=1",
   "start_url": "/",
   "background_color": "#000000",
   "display": "standalone",
